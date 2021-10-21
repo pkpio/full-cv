@@ -26,7 +26,9 @@ jobs:
         
     - name: Format current date
       id: format_date
-      run: echo "::set-output name=date::$(date +"%B %d, %Y")"
+      run: |
+        ls -la
+        echo "::set-output name=date::$(date +"%B %d, %Y")"
     
     - name: Create new release
       id: create_release
