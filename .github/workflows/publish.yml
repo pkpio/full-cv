@@ -22,7 +22,7 @@ jobs:
         root_file: resume.tex
         working_directory: ./
         args: -file-line-error -interaction=nonstopmode
-        compiler: latexmk
+        compiler: pdflatex
         
     - name: Format current date
       id: format_date
